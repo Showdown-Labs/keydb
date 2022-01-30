@@ -1,6 +1,8 @@
-app = "keydb-multimaster-example"
+# fly.toml file generated for showdown-labs-keydb-fly on 2022-01-30T17:38:09-05:00
+
+app = "showdown-labs-keydb-fly"
+
 
 [mount]
-source = "keydb_server"
-destination = "/data"
-
+  destination = "/data"
+  source = "keydb_server"
