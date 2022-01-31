@@ -2,7 +2,13 @@
 
 app = "showdown-labs-keydb-fly"
 
+kill_signal = "SIGTERM"
+kill_timeout = 120
 
 [mount]
-  destination = "/data"
-  source = "keydb_server"
+destination = "/data"
+source = "keydb_server"
+
+[metrics]
+port = 9091
+path = "/metrics"
